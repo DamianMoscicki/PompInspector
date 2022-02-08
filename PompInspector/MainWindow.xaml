@@ -4,9 +4,41 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PompInspector"
+        xmlns:p = "clr-namespace:PompInspector.Properties"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="{x:Static p:Resources.WindowTitle}" Height="778" Width="1000" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="DarkSlateGray" Margin="0,0,0,0">
+        <Label Content="{x:Static p:Resources.DateLabel}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="250"/>
+        <DatePicker Name="datePicker" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Height="30" Width="250"/>
+        <Label Content="{x:Static p:Resources.PompLabel}" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="250"/>
+        <ComboBox Name="comboBox" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Width="250">
+            <ComboBoxItem Content = "{x:Static p:Resources.ComboBoxItemName1}" />
+            <ComboBoxItem Content = "{x:Static p:Resources.ComboBoxItemName2}" />
+            <ComboBoxItem Content = "{x:Static p:Resources.ComboBoxItemName3}" />
+            <ComboBoxItem Content = "{x:Static p:Resources.ComboBoxItemName4}" />
+            <ComboBoxItem Content = "{x:Static p:Resources.ComboBoxItemName5}" />
+            <ComboBoxItem Content = "{x:Static p:Resources.ComboBoxItemName6}" />
+            <ComboBoxItem Content = "{x:Static p:Resources.ComboBoxItemName7}" />
+            <ComboBoxItem Content = "{x:Static p:Resources.ComboBoxItemName8}" />
+        </ComboBox>
+        <Label Content="{x:Static p:Resources.InitialStateLabel}" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox Name="initialStateTextBox" HorizontalAlignment="Left" Margin="10,179,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+        <Label Content="{x:Static p:Resources.FinalStateLabel}" HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox Name="finalStateTextBox" HorizontalAlignment="Left" Margin="10,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+        <Label Content="{x:Static p:Resources.ProductionLabel}" HorizontalAlignment="Left" Margin="10,303,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox Name="productionTextBox" HorizontalAlignment="Left" Margin="10,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" IsEnabled="False" Visibility="Visible" Background="#0F000000"/>
+        <Button Content="{x:Static p:Resources.ConfirmButtonText}" HorizontalAlignment="Left" Margin="10,671,0,0" VerticalAlignment="Top" Width="250" Height="48"/>
+        <Label Content="{x:Static p:Resources.VoltageLabel}" HorizontalAlignment="Left" Margin="10,376,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="voltageTextBox" HorizontalAlignment="Left" Margin="10,402,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+        <Label Content="{x:Static p:Resources.AmperageLabel}" HorizontalAlignment="Left" Margin="10,448,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="amperageTextBox" HorizontalAlignment="Left" Margin="10,474,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+        <Label Content="{x:Static p:Resources.CubicMeterPerHourLabel}" HorizontalAlignment="Left" Margin="10,522,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="cubicMeterPerHourTextBox" HorizontalAlignment="Left" Margin="10,548,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+        <Label Content="{x:Static p:Resources.PompRuntimeLabel}" HorizontalAlignment="Left" Margin="10,594,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="pumpRuntimeTextBox" HorizontalAlignment="Left" Margin="10,620,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
 
+        <DataGrid Name="dataGrid" Margin="284,35,10,85" IsEnabled="False"/>
+        <Button Content="{x:Static p:Resources.GenerateRaportButtonText}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="690" RenderTransformOrigin="0.5,0.5" Margin="284,671,0,0" Height="47"></Button>
     </Grid>
 </Window>
