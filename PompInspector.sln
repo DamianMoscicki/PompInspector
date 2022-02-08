@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32127.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PompInspector", "PompInspector\PompInspector.csproj", "{881E5B59-E447-4966-8BC9-F75DEA20243E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PompInspector.Test", "PompInspector.Test\PompInspector.Test.csproj", "{FB4E9915-EC6B-425C-99F4-EE1BE324068A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{881E5B59-E447-4966-8BC9-F75DEA20243E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{881E5B59-E447-4966-8BC9-F75DEA20243E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{881E5B59-E447-4966-8BC9-F75DEA20243E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB4E9915-EC6B-425C-99F4-EE1BE324068A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4E9915-EC6B-425C-99F4-EE1BE324068A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4E9915-EC6B-425C-99F4-EE1BE324068A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4E9915-EC6B-425C-99F4-EE1BE324068A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
